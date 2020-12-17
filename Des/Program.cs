@@ -20,7 +20,7 @@ namespace Des
             Console.WriteLine(t);
             ICryptoTransform enc = des.CreateEncryptor();
             byte[] encData = enc.TransformFinalBlock(plainData, 0, plainData.Length);
-            string cipherText = Encoding.Unicode.GetString(encData);
+            string cipherText = Encoding.Unicode.GetString(encData);  
 
             Console.WriteLine(cipherText);
 
